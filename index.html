@@ -798,8 +798,8 @@
 
 
         //電腦一開始畫面移到間
-        const scrollerClientHeight = parseInt(scroller.clientHeight * 0.8);
-        const scrollerScrollHeight = scroller.scrollHeight;
+        // const scrollerClientHeight = parseInt(scroller.clientHeight * 0.8);
+        const scrollerScrollHeight = parseInt(scroller.scrollHeight*0.5);
 
         document.addEventListener("DOMContentLoaded", () => {
           console.log("Hello World!");
@@ -860,7 +860,7 @@
 
         function startup() {
           scroller.removeEventListener("touchstart", checkCursorMobile);
-          scroller.addEventListener("touchcancel", checkCursorMobile);
+          // scroller.addEventListener("touchcancel", checkCursorMobile);
           scroller.addEventListener("touchend", checkCursorMobile);
           scroller.removeEventListener("touchmove", checkCursorMobile);
           scroller.removeEventListener("scroll", checkCursorMobile);
