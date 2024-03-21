@@ -858,7 +858,7 @@
         //監聽觸碰螢幕滑動位置(手機)
 
         function startup() {
-          scroller.addEventListener("touchstart", checkCursorMobile);
+          scroller.removeEventListener("touchstart", checkCursorMobile);
           scroller.addEventListener("touchcancel", checkCursorMobile);
           scroller.removeEventListener("touchmove", checkCursorMobile);
           scroller.removeEventListener("scroll", checkCursorMobile);
