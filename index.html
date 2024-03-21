@@ -811,6 +811,7 @@
           // });
           // checkCursorPC();
           startup();
+          checkCursorMobile();
         })
 
         //改變瀏覽器寬度
@@ -863,6 +864,7 @@
           scroller.removeEventListener("touchmove", checkCursorMobile);
           scroller.removeEventListener("scroll", checkCursorMobile);
         }
+
         function checkCursorMobile(e) {
           console.log(e);
           console.log(`mobile scroller clientHeight ${scroller.clientHeight}`);
