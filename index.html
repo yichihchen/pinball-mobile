@@ -861,6 +861,7 @@
           scroller.addEventListener("touchstart", checkCursorMobile);
           scroller.addEventListener("touchcancel", checkCursorMobile);
           scroller.removeEventListener("touchmove", checkCursorMobile);
+          scroller.removeEventListener("scroll", checkCursorMobile);
         }
         function checkCursorMobile(e) {
           console.log(e);
